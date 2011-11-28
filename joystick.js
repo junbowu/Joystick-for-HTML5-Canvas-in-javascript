@@ -81,26 +81,3 @@ var joystick = (function(){
 	}
 })();
 
-
-//vector object
-var unitVector = function(radian) {
-	this.x = -Math.cos(radian);
-	this.y = Math.sin(radian);
-	this.r = radian;
-	this.addRadian = function(addRadian) {
-	//change angle of direction
-	
-		var radian= this.r + addRadian;
-	
-		if(radian> 2*(Math.PI)){ 	
-			radian = radian-2*(Math.PI);
-		}else if(radian<0){
-			radian = radian +2*(Math.PI);
-		}
-	
-		this.x = Math.cos(radian);
-		this.y = Math.sin(radian);
-		this.r = radian;
-		return this;
-	}
-}
