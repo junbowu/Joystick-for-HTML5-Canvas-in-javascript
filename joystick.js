@@ -53,7 +53,7 @@ var joystick = (function(){
 				//base of joystick
 				var grd = context.createRadialGradient(tempScreenPositionX-25, tempScreenPositionY-25, 25, tempScreenPositionX+25, tempScreenPositionY+25, 25);
 				grd.addColorStop(0, "#8ED6FF"); // light blue
-   			grd.addColorStop(1, "#004CB3"); // dark blue  	
+   				grd.addColorStop(1, "#004CB3"); // dark blue  	
    						
 				context.fillStyle = grd;				
 				context.beginPath();
@@ -67,7 +67,7 @@ var joystick = (function(){
 				//actual joystick
 				var grd2 = context.createRadialGradient(tempDragPositionX-15, tempDragPositionY-15, 15, tempDragPositionX+15, tempDragPositionY+15, 15);				
 				grd2.addColorStop(0, "#FF9999"); // light red
-   			grd2.addColorStop(1, "#990000"); // dark red 				
+   				grd2.addColorStop(1, "#990000"); // dark red 				
 				context.fillStyle = grd2;				
 				context.beginPath();
 				//draw arc: arc(x, y, radius, startAngle, endAngle, anticlockwise)
