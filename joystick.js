@@ -1,4 +1,4 @@
-var joystick = (function(){
+var joystick = function(){
 	var tempScreenPositionX;
 	var tempDragPositionX;
 	var tempScreenPositionY;
@@ -79,5 +79,5 @@ var joystick = (function(){
 			}	
 		}
 	}
-})();
+});
 
