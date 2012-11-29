@@ -79,5 +79,5 @@ var joystick = function(){
 			}	
 		}
 	}
-});
+};
 
